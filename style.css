@@ -1,0 +1,348 @@
+.navbar{
+    background-color: #000000;
+    padding: 10px;
+
+    height: 10vh;
+    position: sticky;
+  
+ 
+  
+
+}
+.navul{
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+.navli{
+    display: inline-block;
+    margin-right: 70px; 
+    margin-bottom: 70px;
+}
+
+body{
+    background-color: #000000;
+    width: 100vw;
+    height: 2300px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
+    display: inline-block;
+}
+a:hover {
+    color: #ff4562;
+    animation: shake 0.5s; 
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.left-body{
+    flex: 1; 
+    padding: 20px;
+    margin-left: 70px;
+   color: aliceblue;
+   transition: transform 0.5s, margin 0.5s; 
+}
+.right-body{
+    flex: 1;
+    margin-left: 70px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s, margin 0.5s; 
+}
+.main-body{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    transition: transform 0.5s, margin 0.5s; 
+}
+
+.proje1, .proje2 {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s, margin 0.5s;
+}
+.projeBaslik1{
+    color: aliceblue; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.projeBaslik2{
+    margin-top: 150px;
+    color: aliceblue; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+
+.iletisimForm{
+    color: aliceblue;
+    width: 300vw;
+    margin-left: 530px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    border-radius: 10px;
+    border: 10px;
+    border-color: aqua;
+    justify-content: center;
+  
+   
+
+}
+
+input{
+    background-color: white;
+    width: 30vw;
+    height: 1vh;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    border-color: black;
+    margin-bottom: 20px;
+    
+    }
+    textarea{
+        background-color: white;
+        width: 50%;
+        
+        font-size: 20px;
+        padding: 16px 16px;
+        border-radius: 10px;
+        border-color: black;
+        margin-bottom: 25px;
+        
+    
+    }
+    input:focus-within{
+    outline: none;
+    border-color: blue ;
+    border-width:3px;
+     }
+    
+    textarea:focus-within{
+        outline:  none;
+        border-color: blue;
+        border-width: 3px;
+    
+    }
+
+.konum{
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+
+
+}
+
+
+
+
+
+.proje2 {
+    margin-top: 100px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.text-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-from-left {
+    transform: translateX(-100vw);
+}
+
+.slide-from-right {
+    transform: translateX(100vw);
+}
+
+.animate-left {
+    animation: slideFromLeft 2s forwards;
+}
+
+.animate-right {
+    animation: slideFromRight 2s forwards;
+}
+
+.reverse-left {
+    animation: slideToLeft 2s forwards;
+}
+
+.reverse-right {
+    animation: slideToRight 2s forwards;
+}
+
+
+    
+    
+
+
+
+@keyframes slideToLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes slideToRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animated-button {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 16px;
+    
+    background-color: #ff4562;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+.animated-button:hover{
+    background-color: grey;
+}
+
+
+.animated-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, white   , transparent);
+    animation: shine 2s infinite;
+}
+
+.animated-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    box-sizing: border-box;
+    animation: blink 1s infinite;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(200%);
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+#myBtn {
+    
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: 2px; 
+    border-color: white;
+    outline: none;
+    background-color:#ff4562;; 
+    color: white; 
+    cursor: pointer; 
+    padding: 5px;
+    border-radius: 200px; 
+    font-size: 18px; 
+    width: 60px;
+    height: 60px;
+    text-align: center;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; 
+  }
+
+.footer {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    background-color: #000;
+}
+
+  
