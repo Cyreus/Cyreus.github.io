@@ -1,7 +1,6 @@
 .navbar{
     background-color: #000000;
-    padding: 10px;
-
+    border-radius: 50px;
     height: 10vh;
     position: sticky;
   
@@ -15,6 +14,7 @@
     margin: 0;
 }
 .navli{
+    padding-left: 40px;
     display: inline-block;
     margin-right: 70px; 
     margin-bottom: 70px;
@@ -26,7 +26,12 @@ body{
     height: 350vh;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-image: url("images/gok.jpg");
+    background-size:cover;
+    
+    
 }
+
 a {
     text-decoration: none; 
     color: rgb(255, 255, 255); 
@@ -80,6 +85,7 @@ a:hover {
     transition: transform 0.5s, margin 0.5s;
 }
 .projeBaslik1{
+    margin-top: 130px;
     color: aliceblue; 
     display: flex; 
     align-items: center; 
@@ -253,6 +259,7 @@ input{
     color: aliceblue;
     border: none;
     border-radius: 100px;
+   
 }
 
 .animated-button:hover{
@@ -311,6 +318,7 @@ input{
   }
 
 .footer {
+    border-radius: 100px;
     width: 100%;
     color: white;
     text-align: center;
