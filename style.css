@@ -1,24 +1,27 @@
 .navbar{
-    background-color: #000000;
-    border-radius: 50px;
+
     height: 10vh;
     position: sticky;
-  
- 
-  
+    padding: 2rem 1rem;
+    background-color: black; /* Solid black background */
+    color: #ffffff; /* White text color */
 
 }
-.navul{
-    list-style-type: none; 
-    padding: 0;
-    margin: 0;
+
+.navbar-brand {
+    font-size: 1.5rem; /* Larger font size for the brand */
+    margin-right: auto; /* Move it to the right */
+    margin-left: 2rem; ; /* Adjust the font size as needed */
 }
-.navli{
-    padding-left: 40px;
-    display: inline-block;
-    margin-right: 70px; 
-    margin-bottom: 70px;
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
 }
+.navbar-nav .nav-item {
+    margin-left: 2rem; /* Adjust spacing between items */
+}
+
 
 body{
     background-color: #000000;
@@ -85,7 +88,7 @@ a:hover {
     transition: transform 0.5s, margin 0.5s;
 }
 .projeBaslik1{
-    margin-top: 130px;
+    margin-top: 250px;
     color: aliceblue; 
     display: flex; 
     align-items: center; 
@@ -250,24 +253,6 @@ input{
     }
 }
 
-.animated-button {
-    
-    font-size: 16px;
-    height: 6vh;
-    width: 6vw;
-    background-color: #ff4562;
-    color: aliceblue;
-    border: none;
-    border-radius: 100px;
-   
-}
-
-.animated-button:hover{
-
-    background-color: grey;
-
-}
-
 
 
 @keyframes shine {
@@ -293,39 +278,100 @@ input{
 
 
 #myBtn {
-    
-    display: none; 
-    position: fixed; 
-    bottom: 20px; 
-    right: 30px; 
-    z-index: 99; 
-    border: 2px; 
-    border-color: white;
-    outline: none;
-    background-color:#ff4562;; 
-    color: white; 
-    cursor: pointer; 
-    padding: 5px;
-    border-radius: 200px; 
-    font-size: 18px; 
     width: 60px;
     height: 60px;
-    text-align: center;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 50%; 
+    padding: 10px 15px; 
+    font-size: 24px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    transition: background-color 0.3s, transform 0.3s; 
   }
   
   #myBtn:hover {
-    background-color: #555; 
-  }
+    background-color: #b30000; 
+    transform: scale(1.1); 
+}
 
 .footer {
     border-radius: 100px;
     width: 100%;
-    color: white;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
-    background-color: #000;
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.container {
+    text-align: center;
 }
 
   
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .main-body {
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+    }
+
+    .navbar li {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar li a {
+        display: block;
+        padding: 10px;
+    }
+
+    .left-body, .right-body {
+        width: 100%;
+        text-align: center;
+    }
+
+    .iletisimForm input, .iletisimForm textarea {
+        width: 80%;
+    }
+    .footer{
+        margin-top: 200px;
+        width: 100%;
+        background-color: #000000; 
+        color: #ffffff; 
+    }
+    textarea {
+        height: auto; 
+        min-height: 150px; 
+    }
+    .navbar-nav .nav-item {
+        margin-left: 1rem; 
+    }
+
+}
+@media (max-width: 576px) {
+    #myBtn {
+        bottom: 15px; 
+        right: 15px; 
+        padding: 8px 12px; 
+        font-size: 20px; 
+    }
+
+}

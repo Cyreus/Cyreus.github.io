@@ -3,143 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolyo</title>
 </head>
-
-
 <body>
-    <div>
-        <div class="navbar">
-            <ul class="navul">
-                <li class="navli"><h1 style="color: aliceblue;">Portfolyo</h1></li>
-                <li class="navli"><a href="index.html" style="padding-left: 300px;">Anasayfa</a></li>
-                <li class="navli"><a href="#hakkimda">Hakkımda</a></li>
-                <li class="navli"><a href="#projeler">Projeler</a></li>
-                <li class="navli"><a href="#iletisim">İletişim</a></li>
-                
-                
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand ml-auto" href="#" style="font-size: 1.5rem;">Portfolyo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Anasayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hakkimda">Hakkımda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projeler">Projeler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#iletisim">İletişim</a>
+                </li>
             </ul>
         </div>
-
-        <div class="main-body">
-            
-        
-           
-
-            <div class="left-body" id="hakkimda">
-                <h1>Hakkımda</h1>
-
-                <p>Bandırma Onyedi Eylül Üniversitesi, 4.sınıf yazılım mühendisliği öğrencisiyim.
-                    Backend developer olarak uzmanlaşmaktayım. Web geliştirme ve oyun sektöründe
-                    deneyimlerim ve projelerim oldu. Genel network bilgisine sahibim, bu konu için cisco
-                    tarafından eğitim için verilen dokümanlarla çalıştım. Yalın üretim için Bursa Model
-                    Fabrikadan eğitimler aldım. Aynı zamanda bir yalın mühendisim. Mikroservisler ve
-                    bulut tabanlı hizmetlere hakimim. Ayrıca görüntü işleme, veri analizi, veri
-                    madenciliği gibi alanlarda da kendimi geliştirmekteyim. </p>
-
-                
-
-            </div>
-            <div class="right-body">
-
-                <img src="images/banana.jpeg" alt="" style="width: 300px; height: 300px; border-radius: 50%;">
-
-            </div>
+    </nav>
 
 
+    <div class="main-body">
+        <div class="left-body" id="hakkimda">
+            <h1>Hakkımda</h1>
+            <p>Bandırma Onyedi Eylül Üniversitesi, 4.sınıf yazılım mühendisliği öğrencisiyim.
+                Backend developer olarak uzmanlaşmaktayım. Web geliştirme ve oyun sektöründe
+                deneyimlerim ve projelerim oldu. Genel network bilgisine sahibim, bu konu için cisco
+                tarafından eğitim için verilen dokümanlarla çalıştım. Yalın üretim için Bursa Model
+                Fabrikadan eğitimler aldım. Aynı zamanda bir yalın mühendisim. Mikroservisler ve
+                bulut tabanlı hizmetlere hakimim. Ayrıca görüntü işleme, veri analizi, veri
+                madenciliği gibi alanlarda da kendimi geliştirmekteyim. </p>
         </div>
-        <br><br><br><br><br>
-
-        
-
-        <button onclick="upTo()" id="myBtn" style="margin-bottom: 100px;" title="Go to top">&#10514;</button>
+        <div class="right-body">
+            <img src="images/banana.jpeg" alt="" style="width: 300px; height: 300px; border-radius: 50%;">
+        </div>
     </div>
+    <br><br><br><br><br>
+    <button onclick="upTo()" id="myBtn"  title="Go to top">&#10514;</button>
 
     <div class="projeBaslik1" id="projeler">
-
         <h1><b>Otel Rezervasyon Sistemi</b></h1>
-
     </div>
-
-
-
     <div class="proje1">
-        
-        <a href="https://github.com/Cyreus/Hotel-Booking-System-And-Management-Panel"><img style="width: 30vw; height: 25vh;" src="images/logo.png" alt=""></a>
-
-
+        <a href="https://github.com/Cyreus/Hotel-Booking-System-And-Management-Panel"><img style="width: 30vw; height: 25vh;" src="images/github.png" alt=""></a>
     </div>
-
     <div class="projeBaslik2">
         <h1><b>Hastane Otomasyon Sistemi</b></h1>
-
     </div>
-
     <div class="proje2">
-        <a href="https://github.com/Cyreus/hastane_otomasyon"><img style="width: 30vw; height: 25vh;" src="images/logo.png" alt=""></a>
+        <a href="https://github.com/Cyreus/hastane_otomasyon"><img style="width: 30vw; height: 25vh;" src="images/github.png" alt=""></a>
     </div>
 
-   
-    <hr id="iletisim"  style="margin-top:300px;">
+    <hr id="iletisim" style="margin-top:300px;">
     <h1 style="color: aliceblue; justify-content: center; text-align: center; margin-right: 25px;">&#8711;İletişim&#8711;</h1>
     <hr>
     <div>
-
         <div class="konum">
-            <iframe style="width: 30vw; height:43vh;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.3868078945243!2d29.101502645903995!3d40.97301011373929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac721a35a39d3%3A0xe2647a603cb8f008!2sQuick%20Tower!5e0!3m2!1str!2str!4v1720497854994!5m2!1str!2str" width="900" height="900" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Konum:</iframe>
-    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.3868078945243!2d29.101502645903995!3d40.97301011373929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac721a35a39d3%3A0xe2647a603cb8f008!2sQuick%20Tower!5e0!3m2!1str!2str!4v1720497854994!5m2!1str!2str" width="100%" height="500" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Konum:</iframe>
         </div>
-       
-
-        <div class="iletisimForm">  
-                <form action="https://formspree.io/f/mbjnkadk" method="post"> 
-            
-                   
-                       
-                          
-                        <input style="color: black;" type="text" name="contact_author" placeholder="Name and Surname" class="form-control" id="author" required>
-                  
-                    <br>
+        <div class="container my-5 py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
                     
-                  
-                        
-                            
-                        <input style="color: black;" type="email" name="_replyto" placeholder="E-mail" class="form-control" id="email" required>
-                   
-                    <br>            
-                  
-                        
-                          
-                        <input style="color: black;" type="text" name="contact_subject" placeholder="Subject" class="form-control" id="subject" required>
-                   
-                    <br>
-                   
-                       
-                        <textarea style="color: black; width:30vw; height: 15vh; resize: none;" name="contact_content" placeholder="Message" class="form-control" id="message" required></textarea> <br>
-                    
-                    
-                    <button type="submit" class="animated-button" onclick="upTo()">Gönder</button>
-                    
-                </form>
+                    <form action="https://formspree.io/f/mbjnkadk" method="post">
+                        <div class="form-group">
+                            <input style="color: black;" type="text" name="contact_author" placeholder="Name and Surname" class="form-control" id="author" required>
+                        </div>
+                        <div class="form-group">
+                            <input style="color: black;" type="email" name="_replyto" placeholder="E-mail" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <input style="color: black;" type="text" name="contact_subject" placeholder="Subject" class="form-control" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea style="color: black; width: 730px;max-height: 100px;min-height: 100px;" name="contact_content" placeholder="Message" class="form-control" id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Gönder</button>
+                    </form>
+                </div>
+            </div>
         </div>
         <br>
-
-     
-
-
     </div>
- 
+
     
+    <footer class="bg-dark text-white text-center py-4" style="position: sticky; margin-top: 250px;;">
+        <p class="mb-0">© 2024 Muhammed Ali Öztürk - Made with &hearts;</p>
+    </footer>
 
-
-
-    <div class="footer">
-        <p>© 2024 Muhammed Ali Öztürk - Made with &hearts;</p>
-    </div>
-  
-        
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-    
 </body>
 </html>

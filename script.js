@@ -84,3 +84,4 @@ document.querySelectorAll('.navli a').forEach(anchor => {
     }
   });
 });
+
