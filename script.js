@@ -17,10 +17,12 @@ let lastScrollTop = 0;
 document.addEventListener('scroll', function() {
     const proje1 = document.querySelector('.proje1');
     const proje2 = document.querySelector('.proje2');
+    const proje3 = document.querySelector('.proje3');
     const windowHeight = window.innerHeight;
     
     const proje1Position = proje1.getBoundingClientRect().top;
     const proje2Position = proje2.getBoundingClientRect().top;
+    const proje3Position = proje3.getBoundingClientRect().top;
 
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -35,6 +37,12 @@ document.addEventListener('scroll', function() {
             proje2.classList.add('animate-right', 'visible');
             proje2.classList.remove('reverse-right');
         }
+
+        if (proje3Position < windowHeight) {
+          proje3.classList.add('animate-left', 'visible');
+          proje3.classList.remove('reverse-left');
+        }
+        
     } else {
         // Scroll Up
         if (proje1Position > windowHeight) {
@@ -46,6 +54,10 @@ document.addEventListener('scroll', function() {
             proje2.classList.add('reverse-right');
             proje2.classList.remove('animate-right', 'visible');
         }
+        if (proje3Position > windowHeight) {
+          proje3.classList.add('reverse-left');
+          proje3.classList.remove('animate-left', 'visible');
+      }
     }
     
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 

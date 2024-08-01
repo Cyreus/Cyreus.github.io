@@ -80,7 +80,7 @@ a:hover {
     transition: transform 0.5s, margin 0.5s; 
 }
 
-.proje1, .proje2 {
+.proje1, .proje2, .proje3 {
     margin-top: 100px;
     display: flex;
     align-items: center;
@@ -95,6 +95,14 @@ a:hover {
     justify-content: center;
 }
 .projeBaslik2{
+    margin-top: 150px;
+    color: aliceblue; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.projeBaslik3{
     margin-top: 150px;
     color: aliceblue; 
     display: flex; 
