@@ -63,8 +63,9 @@ a:hover {
     flex: 1; 
     padding: 20px;
     margin-left: 70px;
-   color: aliceblue;
-   transition: transform 0.5s, margin 0.5s; 
+    color: aliceblue;
+    transition: transform 0.5s, margin 0.5s; 
+    text-align: justify;
 }
 .right-body{
     flex: 1;
